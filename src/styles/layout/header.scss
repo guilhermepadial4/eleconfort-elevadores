@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+
+.containerHeader {
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 80px;
+
+  background-color: #2C3333;
+
+  img {
+    padding: 10px;
+  }
+
+  .containerLinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    font-size: 18px;
+    color: $light;
+  }
+}

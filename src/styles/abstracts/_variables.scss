@@ -1,0 +1,30 @@
+// Cores Primárias
+$primary: #FF565B;       // Cor principal (vermelho)
+$secondary: #10B7E2;     // Cor secundária (azul)
+
+// Tons de Cinza (Escala)
+$gray-100: #f8f9fa;      // Muito claro
+$gray-200: #e9ecef;      // Claro
+$gray-300: #dee2e6;      // Médio claro
+$gray-400: #ced4da;      // Médio
+$gray-500: #adb5bd;      // Neutro
+$gray-600: #6c757d;      // Médio escuro
+$gray-700: #495057;      // Escuro
+$gray-800: #343a40;      // Muito escuro
+$gray-900: #212529;      // Preto próximo
+
+// Cores de Feedback (Estados)
+$success: #28a745;       // Verde para sucesso
+$info: #17a2b8;          // Azul para informações
+$warning: #ffc107;       // Amarelo para alerta
+$danger: #dc3545;        // Vermelho para erro
+
+// Cores Adicionais (Neutras ou Temáticas)
+$light: #f8f9fa;         // Cor clara
+$dark: #343a40;          // Cor escura
+$background: #ffffff;    // Cor de fundo
+$text: #212529;          // Cor padrão de texto
+
+// Gradientes (Exemplo com primárias)
+$gradient-primary: linear-gradient(90deg, $primary, darken($primary, 10%));
+$gradient-secondary: linear-gradient(90deg, $secondary, lighten($secondary, 10%));
