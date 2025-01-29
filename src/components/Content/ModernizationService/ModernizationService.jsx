@@ -1,6 +1,6 @@
-import Modernization from '../../assets/modernization.png';
+import Modernization from '../../../assets/modernization.png';
 
-import '../../styles/layout/modernizationservice.scss';
+import '../../../styles/layout/modernizationservice.scss';
 
 export function ModernizationService() {
   return (

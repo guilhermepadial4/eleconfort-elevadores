@@ -1,7 +1,8 @@
+import { ModernizationService } from './ModernizationService/ModernizationService';
+
 import ElevatorOperation from '../../assets/elevator-operation.png';
 
 import '../../styles/layout/content.scss';
-import { ModernizationService } from '../ModernizationService/ModernizationService.Jsx';
 
 export function Content() {
   return (
