@@ -49,6 +49,8 @@
 
     margin-top: 15px;
 
+    border-radius: 8px;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
@@ -119,10 +121,10 @@
 }
 
 .divider {
-  width: 95%; 
+  width: 95%;
   height: 2px;
 
-  background-color: $gray-200; 
-  
+  background-color: $gray-200;
+
   margin: 30px auto;
 }
