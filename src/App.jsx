@@ -1,3 +1,4 @@
+import { Content } from './components/Content/Content';
 import { Header } from './components/header/Header';
 import { HeroBanner } from './components/HeroBanner/HeroBanner';
 
@@ -8,6 +9,7 @@ export function App() {
     <>
       <Header />
       <HeroBanner />
+      <Content />
     </>
   );
 }
