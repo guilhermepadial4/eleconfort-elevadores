@@ -3,6 +3,7 @@ import { ModernizationService } from './ModernizationService/ModernizationServic
 import ElevatorOperation from '../../assets/elevator-operation.png';
 
 import '../../styles/layout/content.scss';
+import { Map } from './map/map';
 
 export function Content() {
   return (
@@ -62,6 +63,7 @@ export function Content() {
       <div className="divider"></div>
 
       <ModernizationService />
+      <Map />
     </>
   );
 }
