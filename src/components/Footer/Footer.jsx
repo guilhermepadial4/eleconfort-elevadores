@@ -1,0 +1,51 @@
+import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { MdLocationOn, MdPhone } from 'react-icons/md';
+
+import Logo from '../../assets/black-logo.png';
+
+import '../../styles/layout/footer.scss';
+
+export function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footerContent">
+        <div className="footerLogo">
+          <img src={Logo} alt="Logo da Empresa" />
+        </div>
+
+        <div className="footerAddres">
+          <h3>Onde Estamos</h3>
+          <p>
+            <MdLocationOn size={20} /> Praça Haroldo Daltro, 394 - São Paulo, SP
+          </p>
+        </div>
+
+        <div className="footerContact">
+          <h3>Contatos</h3>
+          <p>
+            <MdPhone size={20} /> (11) 1234-5678
+          </p>
+          <p>
+            <FaWhatsapp size={20} /> (11) 98765-4321
+          </p>
+        </div>
+
+        <div className="footerMidia">
+          <h3>Redes Sociais</h3>
+          <div className="socialIcons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={24} /> Facebook
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={24} /> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="footerCopyright">
+        <p>&copy; {new Date().getFullYear()} Nome da Empresa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  );
+}

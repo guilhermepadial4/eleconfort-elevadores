@@ -30,6 +30,7 @@ export function Map() {
           />
         </div>
       </div>
+      <div className='divider'></div>
     </>
   );
 }
