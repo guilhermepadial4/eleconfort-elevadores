@@ -1,5 +1,5 @@
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { MdLocationOn, MdPhone } from 'react-icons/md';
+import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md'; // Adicionado ícone de email
 
 import Logo from '../../assets/black-logo.png';
 
@@ -8,13 +8,12 @@ import '../../styles/layout/footer.scss';
 export function Footer() {
   return (
     <footer className="footer">
+      <div className="footerLogo">
+        <img src={Logo} alt="Logo da Empresa" />
+      </div>
       <div className="footerContent">
-        <div className="footerLogo">
-          <img src={Logo} alt="Logo da Empresa" />
-        </div>
-
         <div className="footerAddres">
-          <h3>Onde Estamos</h3>
+          <h3>Onde estamos</h3>
           <p>
             <MdLocationOn size={20} /> Praça Haroldo Daltro, 394 - São Paulo, SP
           </p>
@@ -28,15 +27,18 @@ export function Footer() {
           <p>
             <FaWhatsapp size={20} /> (11) 98765-4321
           </p>
+          <p>
+            <MdEmail size={20} /> comercial@eleconfortelevadores.com.br
+          </p>
         </div>
 
         <div className="footerMidia">
-          <h3>Redes Sociais</h3>
+          <h3>Redes socias</h3>
           <div className="socialIcons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} /> Facebook
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a className="iconInstagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24} /> Instagram
             </a>
           </div>

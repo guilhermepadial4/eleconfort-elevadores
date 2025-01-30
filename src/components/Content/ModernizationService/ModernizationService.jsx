@@ -22,8 +22,6 @@ export function ModernizationService() {
 
         <img src={Modernization} alt="Foto da Modernização de Elevadores" />
       </div>
-
-      <div className="divider"></div>
     </>
   );
 }
