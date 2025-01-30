@@ -1,17 +1,16 @@
-import { Content } from './components/Content/Content';
-import { Footer } from './components/Footer/Footer';
-import { Header } from './components/header/Header';
-import { HeroBanner } from './components/HeroBanner/HeroBanner';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import { About } from './pages/about';
 
 import './styles/main.scss';
 
 export function App() {
   return (
-    <>
-      <Header />
-      <HeroBanner />
-      <Content />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Logo from '../../assets/logo.png';
 
 import '../../styles/layout/header.scss';
@@ -10,7 +12,7 @@ export function Header() {
 
         <div className="containerLinks">
           <p>Inicio</p>
-          <p>Sobre nós</p>
+          <Link to="/about">Sobre nós</Link> 
           <p>Serviços</p>
           <p>Contato</p>
         </div>
