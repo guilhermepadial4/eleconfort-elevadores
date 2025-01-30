@@ -1,3 +1,6 @@
+import { FaWhatsapp } from 'react-icons/fa';
+import { MdOutlineLocalPhone } from 'react-icons/md';
+
 import '../../../styles/layout/map.scss';
 
 export function Map() {
@@ -6,8 +9,18 @@ export function Map() {
       <div className="contactUsWrapper">
         <div className="contactCard">
           <h2>Entre em contato conosco</h2>
-          <p>Envie uma mensagem e tire suas dúvidas.</p>
-          <button>Enviar mensagem</button>
+          <p>Envie uma mensagem, ou ligue, e tire suas dúvidas.</p>
+          <div className="containerButtons">
+            <button>
+              Enviar mensagem
+              <FaWhatsapp size={20} color="white" />
+            </button>
+
+            <button>
+              Ligar agora
+              <MdOutlineLocalPhone size={20} color="white" />
+            </button>
+          </div>
         </div>
         <div className="googleMap">
           <iframe
