@@ -1,0 +1,57 @@
+@import '../abstracts/variables';
+
+.hero-banner-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+
+  width: 100%;
+  height: 90vh;
+
+  color: $light;
+
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(40%);
+  }
+
+  .banner-content {
+    z-index: 1;
+    max-width: 800px;
+
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $gray-200;
+
+    width: 600px;
+
+    margin-top: 24px;
+  }
+}

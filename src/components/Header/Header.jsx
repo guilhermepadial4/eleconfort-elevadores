@@ -11,8 +11,8 @@ export function Header() {
         <img src={Logo} alt="Logo da empresa Eleconfort" />
 
         <div className="containerLinks">
-          <p>Inicio</p>
-          <Link to="/about">Sobre nós</Link> 
+          <Link to="/">Inicio</Link>
+          <Link to="/sobre">Sobre nós</Link>
           <p>Serviços</p>
           <p>Contato</p>
         </div>

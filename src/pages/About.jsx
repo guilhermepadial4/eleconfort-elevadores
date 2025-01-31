@@ -1,9 +1,13 @@
+import { Header } from '../components/header/Header';
+import { HeroBannerAbout } from '../components/HeroBannerAbout/HeroBannerAbout';
+import { Footer } from '../components/Footer/Footer';
+
 export function About() {
   return (
     <>
-      <div>
-        <h1>About</h1>
-      </div>
+      <Header />
+      <HeroBannerAbout />
+      <Footer />
     </>
   );
 }
