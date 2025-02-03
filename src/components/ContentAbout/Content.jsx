@@ -1,5 +1,6 @@
 import '../../styles/layout/contentabout.scss';
 import { MissionVisionValues } from './MissionVisionValues/MissionVisionValues';
+import { TestimonialCarousel } from './TestimonialCarousel/TestimonialCarousel';
 
 export function ContentAbout() {
   return (
@@ -14,6 +15,8 @@ export function ContentAbout() {
         </div>
       </section>
       <MissionVisionValues />
+      <div className="divider"></div>
+      <TestimonialCarousel />
     </>
   );
 }
