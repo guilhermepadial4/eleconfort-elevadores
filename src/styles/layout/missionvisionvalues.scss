@@ -1,0 +1,60 @@
+@import '../abstracts/variables';
+
+.mvv-section {
+  text-align: center;
+
+  background-color: $light;
+
+  padding: 50px 0;
+
+  .mvv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+  }
+
+  .mvv-item {
+    flex: 1;
+
+    min-width: 280px;
+    max-width: 350px;
+
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: $primary;
+
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $text;
+
+      margin-top: 10px;
+    }
+
+    .mvv-icon {
+      font-size: 3rem;
+      color: $primary;
+    }
+  }
+}
