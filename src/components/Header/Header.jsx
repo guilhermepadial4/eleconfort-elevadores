@@ -13,7 +13,7 @@ export function Header() {
         <div className="containerLinks">
           <Link to="/">Inicio</Link>
           <Link to="/sobre">Sobre nós</Link>
-          <p>Serviços</p>
+          <Link to="/servicos">Serviços</Link>
           <p>Contato</p>
         </div>
       </header>
