@@ -1,5 +1,6 @@
 import '../../styles/layout/contentabout.scss';
-import { CallToAction } from './CallToAction/CallToAction';
+import { CallToAction } from '../CallToAction/CallToAction';
+
 import { MissionVisionValues } from './MissionVisionValues/MissionVisionValues';
 import { TestimonialCarousel } from './TestimonialCarousel/TestimonialCarousel';
 

@@ -1,4 +1,4 @@
-import '../../../styles/layout/calltoaction.scss';
+import '../../styles/layout/calltoaction.scss';
 
 export function CallToAction() {
   return (
