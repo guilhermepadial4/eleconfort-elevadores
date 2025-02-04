@@ -29,6 +29,8 @@
     color: $light;
 
     z-index: 1;
+    
+    
 
     h1 {
       font-size: 3rem;
@@ -36,9 +38,9 @@
 
       margin: 0;
 
-      .highlight {
+      .emphasis {
         font-size: 3.5rem;
-        color: $secondary;
+        color: $primary;
       }
     }
   }
