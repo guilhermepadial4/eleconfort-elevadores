@@ -1,11 +1,19 @@
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md'; // Adicionado ícone de email
+import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md';
 
 import Logo from '../../assets/black-logo.png';
+import ArrowUp from '../../assets/arrow_under.svg';
 
 import '../../styles/layout/footer.scss';
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footerLogo">
@@ -48,6 +56,10 @@ export function Footer() {
       <div className="footerCopyright">
         <p>&copy; {new Date().getFullYear()} Nome da Empresa. Todos os direitos reservados.</p>
       </div>
+
+      <button className="scrollToTop" onClick={scrollToTop}>
+        <img src={ArrowUp} alt="Voltar ao topo" className="arrow-icon" />
+      </button>
     </footer>
   );
 }
