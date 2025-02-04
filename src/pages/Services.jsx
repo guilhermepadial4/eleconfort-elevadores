@@ -6,12 +6,12 @@ import { ServicesPictures } from '../components/Services/Services';
 
 export function Services() {
   return (
-    <>
+    <div className='services'>
       <Header />
       <HeroBannerServices />
       <ServicesPictures />
       <CallToAction />
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import { FaHeadset, FaTools, FaPaintBrush } from 'react-icons/fa';
+
 import '../../styles/layout/companydifferentials.scss';
 
 export function CompanyDifferential() {

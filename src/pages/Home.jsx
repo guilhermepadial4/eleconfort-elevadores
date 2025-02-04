@@ -5,11 +5,11 @@ import { HeroBanner } from '../components/HeroBanner/HeroBanner';
 
 export default function Home() {
   return (
-    <>
+    <div className='home'>
       <Header />
       <HeroBanner />
       <Content />
       <Footer />
-    </>
+    </div>
   );
 }

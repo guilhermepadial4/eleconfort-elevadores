@@ -63,6 +63,7 @@ export function Content() {
       <div className="divider"></div>
 
       <ModernizationService />
+      <div className="divider"></div>
       <Map />
     </>
   );

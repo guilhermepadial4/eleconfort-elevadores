@@ -5,11 +5,11 @@ import { ContentContact } from '../components/ContentContact/ContentContact';
 
 export function Contact() {
   return (
-    <>
+    <div className='contact'>
       <Header />
       <HeroBannerContact />
       <ContentContact />
       <Footer />
-    </>
+    </div>
   );
 }
