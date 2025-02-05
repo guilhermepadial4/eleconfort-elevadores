@@ -27,7 +27,6 @@
   &__content {
     text-align: center;
     color: $light;
-
     z-index: 1;
 
     h1 {
@@ -41,6 +40,46 @@
 
         font-size: 3.5rem;
         color: $primary;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: 75vh;
+
+    &__content h1 {
+      font-size: 2.5rem;
+
+      .highlights {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 65vh;
+
+    padding: 0 15px;
+
+    &__content h1 {
+      font-size: 2rem;
+
+      .highlights {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 55vh;
+
+    padding: 0 10px;
+
+    &__content h1 {
+      font-size: 1.8rem;
+
+      .highlights {
+        font-size: 3rem;
       }
     }
   }
