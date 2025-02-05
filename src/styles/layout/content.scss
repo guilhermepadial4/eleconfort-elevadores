@@ -2,6 +2,7 @@
 
 .containerContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -9,6 +10,7 @@
 
   padding-top: 35px;
   padding-left: 95px;
+  padding-right: 95px;
 
   h2 {
     display: flex;
@@ -16,8 +18,8 @@
 
     font-size: 28px;
     font-weight: bold;
-    color: $text;
     text-align: left;
+    color: $text;
 
     span {
       display: flex;
@@ -45,7 +47,8 @@
   }
 
   img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 
     margin-top: 15px;
 
@@ -60,18 +63,26 @@
     }
   }
 
-  .servicesList {
-    max-width: 400px;
+  .contentLeft {
+    flex: 1;
 
-    padding: 20px;
+    max-width: 50%;
+    min-width: 320px;
+  }
+
+  .servicesList {
+    flex: 1;
+
+    max-width: 400px;
 
     background-color: lighten($background, 5%);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
     border-radius: 8px;
 
-    margin-right: 90px;
     margin-top: 28px;
+
+    padding: 20px;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -117,6 +128,85 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerContent {
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .contentLeft,
+  .servicesList {
+    text-align: center;
+
+    max-width: 100%;
+  }
+
+  .servicesList {
+    margin-right: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h2 span {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h2 span {
+    font-size: 24px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .servicesList {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h2 span {
+    font-size: 22px;
+  }
+
+  .servicesList {
+    padding: 10px;
+  }
+
+  .servicesList ul li span {
+    font-size: 16px;
+  }
+
+  .servicesList ul li p {
+    font-size: 14px;
   }
 }
 

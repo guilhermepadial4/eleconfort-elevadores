@@ -3,11 +3,12 @@
 .footer {
   position: relative;
 
+  text-align: center;
   color: $dark;
 
   background-color: #fbfbfb;
 
-  padding: 10px 30px;
+  padding: 20px;
 
   .footerContent {
     display: flex;
@@ -18,13 +19,24 @@
     max-width: 1100px;
 
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
   }
 
   .footerLogo {
     margin-bottom: 30px;
 
     img {
-      width: 200px;
+      width: 180px;
+
+      @media (max-width: 768px) {
+        width: 150px;
+      }
     }
   }
 
@@ -37,7 +49,13 @@
 
     text-align: left;
 
-    min-width: 200px;
+    min-width: 250px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+
+      min-width: auto;
+    }
   }
 
   h3 {
@@ -50,6 +68,7 @@
   p {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 
     font-size: 16px;
@@ -58,6 +77,10 @@
 
   .footerAddres p {
     width: 300px;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
   }
 
   .footerContact {
@@ -65,8 +88,6 @@
   }
 
   .footerContact p {
-    justify-content: flex-start;
-
     transition: color 0.3s ease, transform 0.2s ease;
 
     cursor: pointer;
@@ -106,10 +127,8 @@
   }
 
   .footerCopyright {
-    display: flex;
-    justify-content: flex-start;
-
     font-size: 14px;
+    text-align: center;
     opacity: 0.7;
 
     width: 100%;
@@ -136,6 +155,10 @@
     transition: background-color 0.3s ease;
 
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      right: 10px;
+    }
   }
 
   .scrollToTop .arrow-icon {

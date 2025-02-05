@@ -9,8 +9,8 @@
   padding: 35px 95px;
 
   img {
-    width: 350px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px;
     height: auto;
 
     border-radius: 8px;
@@ -18,7 +18,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-10px); 
+      transform: translateY(-10px);
+
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     }
   }
@@ -33,8 +34,8 @@
 
     font-size: 28px;
     font-weight: bold;
-    color: $text;
     text-align: left;
+    color: $text;
 
     span {
       display: flex;
@@ -85,5 +86,85 @@
     &:hover {
       background-color: darken($primary, 3%);
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .modernizationWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+
+    padding: 30px;
+  }
+
+  .containerModernization {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h2 span {
+    justify-content: center;
+
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modernizationWrapper {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h2 span {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modernizationWrapper {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h2 span {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 240px;
+  }
+
+  button {
+    font-size: 14px;
+    
+    padding: 8px 16px;
   }
 }
