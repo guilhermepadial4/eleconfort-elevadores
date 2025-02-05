@@ -41,13 +41,12 @@
     .stars {
       display: flex;
       justify-content: center;
-
       margin-bottom: 10px;
 
       .star {
         font-size: 1.5rem;
         color: #f4c430;
-        
+
         margin: 0 3px;
       }
     }
@@ -66,5 +65,77 @@
 
   .slick-dots li.slick-active button:before {
     color: $secondary;
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .testimonial-card {
+      max-width: 90%;
+
+      padding: 25px;
+
+      .review {
+        font-size: 1.1rem;
+      }
+
+      .stars .star {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .testimonial-card {
+      max-width: 95%;
+
+      padding: 20px;
+
+      .review {
+        font-size: 1rem;
+      }
+
+      .stars .star {
+        font-size: 1.3rem;
+      }
+
+      .name {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .testimonial-card {
+      max-width: 100%;
+
+      padding: 18px;
+
+      .review {
+        font-size: 0.95rem;
+      }
+
+      .stars .star {
+        font-size: 1.2rem;
+      }
+
+      .name {
+        font-size: 0.9rem;
+      }
+    }
+
+    .slick-dots li button:before {
+      font-size: 10px;
+    }
   }
 }

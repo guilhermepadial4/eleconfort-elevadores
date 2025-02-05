@@ -13,6 +13,22 @@
   width: 80%;
 
   margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+
+    width: 100%;
+  }
 }
 
 .differential-card {
@@ -22,7 +38,7 @@
   align-items: center;
 
   width: 280px;
-  height: 250px;
+  height: 220px;
 
   text-align: center;
   color: black;
@@ -32,7 +48,7 @@
 
   border-radius: 8px;
 
-  padding: 20px;
+  padding: 15px;
 
   transition: transform 0.3s ease-in-out;
 
@@ -43,22 +59,59 @@
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   p {
-    flex-grow: 1;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-grow: 1;
 
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: $text;
   }
 
   &:hover {
     transform: translateY(-5px);
+  }
+
+  @media (max-width: 1024px) {
+    width: 240px;
+    height: 200px;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
+    height: 190px;
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 45%;
+    height: 180px;
+
+    padding: 10px;
+
+    .icon {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 }

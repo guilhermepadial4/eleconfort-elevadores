@@ -57,4 +57,71 @@
       color: $primary;
     }
   }
+
+  @media (max-width: 1024px) {
+    .mvv-container {
+      gap: 1.5rem;
+    }
+
+    .mvv-item {
+      padding: 25px;
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .mvv-icon {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mvv-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mvv-item {
+      max-width: 90%;
+
+      padding: 20px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .mvv-icon {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .mvv-item {
+      max-width: 95%;
+
+      padding: 18px;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+
+      .mvv-icon {
+        font-size: 2.2rem;
+      }
+    }
+  }
 }

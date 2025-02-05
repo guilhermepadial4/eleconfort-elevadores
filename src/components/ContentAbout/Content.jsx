@@ -4,10 +4,12 @@ import { CallToAction } from '../CallToAction/CallToAction';
 import { MissionVisionValues } from './MissionVisionValues/MissionVisionValues';
 import { TestimonialCarousel } from './TestimonialCarousel/TestimonialCarousel';
 
+import backgroundImage from '../../assets/buttons.png';
+
 export function ContentAbout() {
   return (
     <>
-      <section className="content-about">
+      <section className="content-about" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="overlay"></div>
         <div className="content">
           <h1>

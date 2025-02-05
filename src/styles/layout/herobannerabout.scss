@@ -29,6 +29,7 @@
 
   .banner-content {
     z-index: 1;
+
     max-width: 800px;
 
     padding: 20px;
@@ -53,5 +54,55 @@
     width: 600px;
 
     margin-top: 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .banner-content {
+      max-width: 700px;
+
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+      width: 100%; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-content {
+      max-width: 90%;
+
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 2rem; 
+    }
+
+    p {
+      font-size: 0.9rem;
+
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-content {
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 1.5rem; 
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
