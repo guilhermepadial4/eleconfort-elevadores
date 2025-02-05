@@ -13,7 +13,7 @@ export function ContentContact() {
             <h2>ENTRE EM CONTATO CONOSCO</h2>
             <div className="divider"></div>
             <p>
-              <strong>ENVIE UMA MENSAGEM OU VENHA NOS CONHECER CLICANDO AO LADO</strong>
+              <strong>ENVIE UMA MENSAGEM OU VENHA NOS CONHECER</strong>
             </p>
           </div>
 
