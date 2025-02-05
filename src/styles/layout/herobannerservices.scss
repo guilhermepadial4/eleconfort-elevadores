@@ -1,86 +1,95 @@
 @import '../abstracts/variables';
 
 .hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   position: relative;
 
   width: 100%;
   height: 90vh;
 
-  background-size: cover;
-  background-position: center;
+  color: $light;
 
-  &__overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  .banner-image {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
 
     width: 100%;
     height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.5);
+    object-fit: cover; /* Garantir que a imagem cubra toda a área sem distorcer */
+    filter: brightness(40%);
   }
 
-  &__content {
-    text-align: center;
-    color: $light;
+  .banner-content {
     z-index: 1;
 
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
+    max-width: 800px;
+    padding: 20px;
+  }
 
-      margin: 0;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
 
-      .highlights {
-        display: block;
+    margin-bottom: 10px;
 
-        font-size: 3.5rem;
-        color: $primary;
-      }
+    span {
+      color: $primary;
     }
   }
 
   @media (max-width: 1024px) {
-    height: 75vh;
+    .banner-content {
+      max-width: 700px;
+      padding: 15px;
+    }
 
-    &__content h1 {
+    h1 {
       font-size: 2.5rem;
+    }
 
-      .highlights {
-        font-size: 3rem;
-      }
+    p {
+      font-size: 1rem;
+      width: 100%;
     }
   }
 
   @media (max-width: 768px) {
-    height: 65vh;
+    height: 80vh; /* Ajuste de altura para telas menores */
 
-    padding: 0 15px;
+    .banner-content {
+      max-width: 90%;
+      padding: 10px;
+    }
 
-    &__content h1 {
+    h1 {
       font-size: 2rem;
+    }
 
-      .highlights {
-        font-size: 2.5rem;
-      }
+    p {
+      font-size: 0.9rem;
+      width: 100%;
     }
   }
 
   @media (max-width: 480px) {
-    height: 55vh;
+    height: 60vh; /* Ajuste de altura para telas muito pequenas */
 
-    padding: 0 10px;
+    .banner-content {
+      padding: 10px;
+    }
 
-    &__content h1 {
-      font-size: 1.8rem;
+    h1 {
+      font-size: 1.5rem;
+    }
 
-      .highlights {
-        font-size: 3rem;
-      }
+    p {
+      font-size: 0.8rem;
     }
   }
 }
