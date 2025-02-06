@@ -3,7 +3,7 @@ import { ModernizationService } from './ModernizationService/ModernizationServic
 import ElevatorOperation from '../../assets/elevator-operation.png';
 
 import '../../styles/layout/content.scss';
-import { Map } from './map/map';
+import { Map } from './Map/Map';
 
 export function Content() {
   return (

@@ -65,7 +65,7 @@ export function Footer() {
       </div>
 
       <div className="footerCopyright">
-        <p>&copy; {new Date().getFullYear()} Nome da Empresa. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Eleconfort. Todos os direitos reservados. By RastaIT</p>
       </div>
 
       <button className="scrollToTop" onClick={scrollToTop}>

@@ -1,6 +1,6 @@
-@import 'base/reset';
-@import 'base/typography';
-@import 'abstracts/variables';
+@use 'base/reset' as *;
+@use 'base/typography' as *;
+@use 'abstracts/variables' as *;
 
 .about {
   background-color: #fbfbfb;
