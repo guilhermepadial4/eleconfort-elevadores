@@ -19,19 +19,28 @@ export function ContentContact() {
 
           <div className="contact-info">
             <div className="info-card">
-              <FaMapMarkerAlt className="icon" />
-              <h3>Estamos Localizados</h3>
-              <p>Praça Haroldo Daltro nº 394 - Vila Nova Manchester</p>
+              <a href="https://www.google.com/maps?q=Praça+Haroldo+Daltro,+394+-+São+Paulo,+SP" target="_blank">
+                <FaMapMarkerAlt className="icon" />
+                <h3>Estamos Localizados</h3>
+                <p>Praça Haroldo Daltro nº 394 - Vila Nova Manchester</p>
+              </a>
             </div>
             <div className="info-card">
-              <FaEnvelope className="icon" />
-              <h3>Email</h3>
-              <p>comercial@eleconforteelevadores.com.br</p>
+              <a href="mailto:comercial@eleconfortelevadores.com.br" target="_blank">
+                <FaEnvelope className="icon" />
+                <h3>Email</h3>
+                <p>comercial@eleconforteelevadores.com.br</p>
+              </a>
             </div>
             <div className="info-card">
-              <FaWhatsapp className="icon" />
-              <h3>WhatsApp</h3>
-              <p>Entre em contato clicando</p>
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&text=Ol%C3%A1,%20Tudo%20bem?%20Gostaria%20de%20Saber%20Mais%20Informa%C3%A7%C3%B5es.&phone=5511991239476"
+                target="_blank"
+              >
+                <FaWhatsapp className="icon" />
+                <h3>WhatsApp</h3>
+                <p>Entre em contato clicando</p>
+              </a>
             </div>
           </div>
         </div>
