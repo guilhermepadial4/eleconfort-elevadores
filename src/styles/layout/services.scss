@@ -1,6 +1,8 @@
 @import '../abstracts/variables';
 
 .carousel {
+  position: relative;
+
   width: 100%;
   max-width: 1000px;
 
@@ -50,11 +52,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 
     width: 40px;
     height: 40px;
-
-    z-index: 10;
 
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -70,20 +74,12 @@
     }
   }
 
-  .slick-next::before {
-    content: '\276F';
-  }
-
-  .slick-prev::before {
-    content: '\276E';
-  }
-
   .slick-prev {
-    left: -45px;
+    left: 10px;
   }
 
   .slick-next {
-    right: -45px;
+    right: 10px;
   }
 
   .slick-dots {
@@ -139,10 +135,10 @@
   }
 
   .slick-prev {
-    left: -15px;
+    left: 5px;
   }
 
   .slick-next {
-    right: -15px;
+    right: 5px;
   }
 }
