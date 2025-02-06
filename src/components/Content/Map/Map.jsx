@@ -12,13 +12,20 @@ export function Map() {
           <p>Envie uma mensagem, ou ligue, e tire suas dúvidas.</p>
           <div className="containerButtons">
             <button>
-              Enviar mensagem
-              <FaWhatsapp size={20} color="white" />
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&text=Ol%C3%A1,%20Tudo%20bem?%20Gostaria%20de%20Saber%20Mais%20Informa%C3%A7%C3%B5es.&phone=5511991239476"
+                target="_blank"
+              >
+                Enviar mensagem
+                <FaWhatsapp size={20} color="white" />
+              </a>
             </button>
 
             <button>
-              Ligar agora
-              <MdOutlineLocalPhone size={20} color="white" />
+              <a href="tel:+551120517645" target="_blank">
+                Ligar agora
+                <MdOutlineLocalPhone size={20} color="white" />
+              </a>
             </button>
           </div>
         </div>
@@ -30,7 +37,7 @@ export function Map() {
           />
         </div>
       </div>
-      <div className='divider'></div>
+      <div className="divider"></div>
     </>
   );
 }

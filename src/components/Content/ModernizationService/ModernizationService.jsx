@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Modernization from '../../../assets/modernization.png';
 
 import '../../../styles/layout/modernizationservice.scss';
@@ -17,7 +18,9 @@ export function ModernizationService() {
             trazemos o que há de melhor no mercado para o conforto do seu prédio ou condomínio, veja alguns dos nossos serviços.
           </p>
 
-          <button>Veja nossos serviços</button>
+          <Link to="/servicos">
+            <button>Veja nossos serviços</button>
+          </Link>
         </div>
 
         <img src={Modernization} alt="Foto da Modernização de Elevadores" />
