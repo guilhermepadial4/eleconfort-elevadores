@@ -70,11 +70,19 @@
     p {
       font-size: 1rem;
 
-      width: 100%; 
+      width: 100%;
     }
   }
 
   @media (max-width: 768px) {
+    height: 80vh;
+
+    .banner-image {
+      height: 80%;
+
+      object-fit: contain;
+    }
+
     .banner-content {
       max-width: 90%;
 
@@ -82,7 +90,7 @@
     }
 
     h1 {
-      font-size: 2rem; 
+      font-size: 2rem;
     }
 
     p {
@@ -93,12 +101,20 @@
   }
 
   @media (max-width: 480px) {
+    height: 60vh;
+
+    .banner-image {
+      height: 70%;
+
+      object-fit: contain;
+    }
+
     .banner-content {
       padding: 10px;
     }
 
     h1 {
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
     }
 
     p {
