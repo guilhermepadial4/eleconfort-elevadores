@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import { FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { Modal, Button, Form } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { CallToAction } from '../CallToAction/CallToAction';
 
 import '../../styles/layout/contentcontact.scss';
 
 export function ContentContact() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
   return (
     <>
       <section className="contact-section">
@@ -15,6 +23,9 @@ export function ContentContact() {
             <p>
               <strong>ENVIE UMA MENSAGEM OU VENHA NOS CONHECER</strong>
             </p>
+            <Button variant="primary" onClick={handleShow}>
+              Inserir Dados de Contato
+            </Button>
           </div>
 
           <div className="contact-info">
@@ -54,6 +65,38 @@ export function ContentContact() {
           ></iframe>
         </div>
       </section>
+
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Insira seus dados de contato</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="formName">
+              <Form.Label>Nome</Form.Label>
+              <Form.Control type="text" placeholder="Digite seu nome" className='test'/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Digite seu email" />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formPhone">
+              <Form.Label>Telefone</Form.Label>
+              <Form.Control type="tel" placeholder="Digite seu telefone" />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Fechar
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Enviar
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
       <CallToAction />
     </>

@@ -161,6 +161,25 @@
       height: 300px;
     }
   }
+
+  .btn-primary {
+    background-color: $primary;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    &:hover {
+      background-color: darken($primary, 5%);
+    }
+  }
+
+  .test {
+    background-color:red !important;
+  }
 }
 
 @media (max-width: 480px) {
