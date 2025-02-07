@@ -52,6 +52,7 @@ export function ServicesPictures() {
 
   return (
     <div className="carousel">
+      <h2 className="services-title">Explore Nossos Serviços de Qualidade</h2>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="carousel-item">

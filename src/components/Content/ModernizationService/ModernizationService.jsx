@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Modernization from '../../../assets/modernization.png';
+import Modernization from '../../../assets/service-03.png';
 
 import '../../../styles/layout/modernizationservice.scss';
 

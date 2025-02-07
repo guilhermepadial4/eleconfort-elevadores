@@ -14,6 +14,9 @@ export const HeroBannerServices = () => {
           <h1>
             <span className="highlights">Conheça</span> nossos serviços
           </h1>
+          <p>
+            Transformamos necessidades em soluções inovadoras, oferecendo serviços de qualidade que impulsionam o sucesso da sua empresa.
+          </p>
         </div>
       </div>
     </section>
