@@ -1,6 +1,6 @@
 import { useSpring, animated } from '@react-spring/web';
 import { useState, useEffect } from 'react';
-import ElevatorIcon from '../../assets/elevator-icon.jpg';
+import ElevatorAnimattion from '../../assets/elevator-animattion.png';
 import '../../styles/layout/ElevatorAnimation.scss';
 
 const ElevatorAnimation = () => {
@@ -21,7 +21,7 @@ const ElevatorAnimation = () => {
   return (
     <>
       <animated.div className="elevator" style={props}>
-        <img src={ElevatorIcon} alt="Elevador" className="elevator-img" />
+        <img src={ElevatorAnimattion} alt="Elevador" className="elevator-img" />
       </animated.div>
       {!animationFinished && <div className="overlay"></div>}
     </>
