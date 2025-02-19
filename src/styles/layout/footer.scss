@@ -1,179 +1,206 @@
 @use '../abstracts/variables' as *;
 
 .footer {
-  position: relative;
-
-  text-align: center;
-  color: $dark;
-
   background-color: #fbfbfb;
+  padding: 25px 0;
 
-  padding: 20px;
-
-  .footerContent {
+  .footer-top {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 
-    max-width: 1100px;
+  .footer-info {
+    display: flex;
+    gap: 120px;
+    text-align: center;
 
-    margin: 0 auto;
-
-    @media (max-width: 768px) {
+    .info-item {
+      display: flex;
       flex-direction: column;
       align-items: center;
-
+      justify-content: center;
       text-align: center;
+
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $text;
+
+      svg {
+        font-size: 2.4rem;
+        color: $primary;
+        margin-bottom: 8px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $gray-700;
+        max-width: 200px;
+        margin-top: 5px;
+      }
     }
   }
 
-  .footerLogo {
-    margin-bottom: 30px;
+  .footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    .footer-contact {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $gray-800;
+      width: 30%; // Ajuste de largura para criar espaço para o menu
+      padding-left: 20px;
+
+      .footer-contact-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $text;
+        margin-bottom: 10px;
+      }
+
+      .footer-contact-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+
+        p {
+          color: $gray-700;
+          margin: 0;
+        }
+
+        .footer-contact-icon {
+          font-size: 1rem;
+          color: $gray-800;
+        }
+      }
+    }
+
+    .container-address-social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      .footer-address {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $gray-800;
+        width: 100%;
+        padding-left: 20px;
+
+        .footer-address-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $text;
+          margin-bottom: 10px;
+        }
+
+        .footer-address-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .footer-address-icon {
+          font-size: 1rem;
+          color: $gray-800;
+          margin-bottom: 8px;
+        }
+
+        .footer-address-text {
+          font-size: 1rem;
+          color: $gray-700;
+          margin-top: 5px;
+        }
+      }
+
+      .footer-social {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $gray-800;
+        width: 100%; // Ajuste de largura para as redes sociais
+        padding-left: 20px;
+
+        .footer-social-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $text;
+          margin-bottom: 10px;
+        }
+
+        .footer-social-links {
+          display: flex;
+          gap: 15px;
+
+          .footer-social-icon {
+            font-size: 1.5rem;
+            color: $gray-800;
+            transition: color 0.3s;
+
+            &:hover {
+              color: $primary; // Cor ao passar o mouse
+            }
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $gray-800;
+      width: 30%; // Ajusta para o menu ocupar o restante do espaço
+      padding-left: 20px;
+
+      .footer-menu-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $text;
+        margin-bottom: 10px;
+      }
+
+      .footer-menu-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            text-decoration: none;
+            color: $gray-700;
+            font-size: 1rem;
+
+            &.active {
+              font-weight: bold;
+              color: $primary; // Cor que você quiser para o link ativo
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; // Ajusta o espaçamento entre as imagens
+    margin-top: 20px; // Ajusta o espaçamento em relação aos outros elementos
 
     img {
-      width: 180px;
-
-      @media (max-width: 768px) {
-        width: 150px;
-      }
+      width: 150px; // Reduz um pouco o tamanho para melhor alinhamento
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
     }
-  }
-
-  .footerAddres,
-  .footerContact,
-  .footerMidia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: left;
-
-    min-width: 250px;
-
-    a {
-      text-decoration: none;
-      color: inherit;
-
-      transition: color 0.3s ease, transform 0.2s ease;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-
-    @media (max-width: 768px) {
-      text-align: center;
-
-      min-width: auto;
-    }
-  }
-
-  h3 {
-    font-size: 18px;
-    color: $gray-900;
-
-    margin-bottom: 10px;
-  }
-
-  p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    font-size: 16px;
-    color: $gray-700;
-  }
-
-  .footerAddres p {
-    width: 300px;
-
-    @media (max-width: 768px) {
-      width: auto;
-    }
-  }
-
-  .footerContact {
-    gap: 8px;
-  }
-
-  .footerContact p {
-    transition: color 0.3s ease, transform 0.2s ease;
-
-    cursor: pointer;
-
-    &:hover {
-      color: $primary;
-    }
-  }
-
-  .footerMidia {
-    align-items: center;
-
-    text-align: center;
-  }
-
-  .socialIcons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-    a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      font-size: 16px;
-      color: $gray-700;
-
-      transition: color 0.3s ease, transform 0.2s ease;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-  }
-
-  .footerCopyright {
-    font-size: 14px;
-    text-align: center;
-    opacity: 0.7;
-
-    width: 100%;
-
-    margin-top: 40px;
-  }
-
-  .scrollToTop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-
-    font-size: 14px;
-    opacity: 0.7;
-
-    background: transparent;
-
-    border: none;
-
-    transition: background-color 0.3s ease;
-
-    cursor: pointer;
-
-    @media (max-width: 768px) {
-      right: 10px;
-    }
-  }
-
-  .scrollToTop .arrow-icon {
-    width: 20px;
-    height: 20px;
   }
 }
