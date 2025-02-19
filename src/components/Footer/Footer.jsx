@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import '../../styles/layout/footer.scss';
 import {
   FaHeadset,
   FaTools,
@@ -12,14 +11,12 @@ import {
   FaFacebookF,
   FaInstagram,
 } from 'react-icons/fa';
-
+import '../../styles/layout/footer.scss';
 import Logo from '../../assets/black-logo.png';
 import SecureSite from '../../assets/secure-site.png';
 
 export function Footer() {
-  const location = useLocation(); // Hook para acessar a URL atual
-
-  // Função para verificar se o link é o atual
+  const location = useLocation();
   const isActive = (path) => (location.pathname === path ? 'active' : '');
 
   return (
@@ -73,7 +70,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Seção de Endereço */}
         <div className="container-address-social">
           <div className="footer-address">
             <h2 className="footer-address-title">Endereço</h2>
@@ -96,7 +92,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Menu de navegação */}
         <div className="footer-menu">
           <h2 className="footer-menu-title">Menu</h2>
           <ul className="footer-menu-list">
@@ -127,6 +122,9 @@ export function Footer() {
           <img src={Logo} alt="Logo da empresa" />
           <img src={SecureSite} alt="Certificado" />
         </div>
+      </div>
+      <div className="footer-copyright">
+        <p>&copy; {new Date().getFullYear()} Eleconfort. Todos os direitos reservados. By RastaIT.</p>
       </div>
     </footer>
   );

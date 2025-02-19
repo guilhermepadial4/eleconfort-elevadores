@@ -2,6 +2,7 @@
 
 .footer {
   background-color: #fbfbfb;
+
   padding: 25px 0;
 
   .footer-top {
@@ -29,6 +30,7 @@
       svg {
         font-size: 2.4rem;
         color: $primary;
+
         margin-bottom: 8px;
       }
 
@@ -39,7 +41,9 @@
       p {
         font-size: 0.95rem;
         color: $gray-700;
+
         max-width: 200px;
+
         margin-top: 5px;
       }
     }
@@ -47,20 +51,24 @@
 
   .footer-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
     margin-top: 20px;
 
     .footer-contact {
       font-size: 1rem;
       font-weight: 500;
       color: $gray-800;
-      width: 30%; // Ajuste de largura para criar espaço para o menu
-      padding-left: 20px;
+
+      width: 30%;
+
+      padding-left: 30px;
 
       .footer-contact-title {
         font-size: 1.2rem;
         font-weight: 600;
         color: $text;
+
         margin-bottom: 10px;
       }
 
@@ -68,10 +76,12 @@
         display: flex;
         align-items: center;
         gap: 8px;
+
         margin-bottom: 10px;
 
         p {
           color: $gray-700;
+
           margin: 0;
         }
 
@@ -92,13 +102,16 @@
         font-size: 1rem;
         font-weight: 500;
         color: $gray-800;
+
         width: 100%;
+
         padding-left: 20px;
 
         .footer-address-title {
           font-size: 1.2rem;
           font-weight: 600;
           color: $text;
+
           margin-bottom: 10px;
         }
 
@@ -111,12 +124,14 @@
         .footer-address-icon {
           font-size: 1rem;
           color: $gray-800;
+
           margin-bottom: 8px;
         }
 
         .footer-address-text {
           font-size: 1rem;
           color: $gray-700;
+
           margin-top: 5px;
         }
       }
@@ -125,13 +140,16 @@
         font-size: 1rem;
         font-weight: 500;
         color: $gray-800;
-        width: 100%; // Ajuste de largura para as redes sociais
+
+        width: 100%;
+
         padding-left: 20px;
 
         .footer-social-title {
           font-size: 1.2rem;
           font-weight: 600;
           color: $text;
+
           margin-bottom: 10px;
         }
 
@@ -142,10 +160,11 @@
           .footer-social-icon {
             font-size: 1.5rem;
             color: $gray-800;
+
             transition: color 0.3s;
 
             &:hover {
-              color: $primary; // Cor ao passar o mouse
+              color: $primary;
             }
           }
         }
@@ -156,31 +175,35 @@
       font-size: 1rem;
       font-weight: 500;
       color: $gray-800;
-      width: 30%; // Ajusta para o menu ocupar o restante do espaço
-      padding-left: 20px;
+
+      width: 30%;
+
+      padding-left: 130px;
 
       .footer-menu-title {
         font-size: 1.2rem;
         font-weight: 600;
         color: $text;
+
         margin-bottom: 10px;
       }
 
       .footer-menu-list {
         list-style: none;
+
         padding: 0;
 
         li {
           margin-bottom: 10px;
 
           a {
+            font-size: 1rem;
             text-decoration: none;
             color: $gray-700;
-            font-size: 1rem;
 
             &.active {
               font-weight: bold;
-              color: $primary; // Cor que você quiser para o link ativo
+              color: $primary;
             }
           }
         }
@@ -193,14 +216,142 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 20px; // Ajusta o espaçamento entre as imagens
-    margin-top: 20px; // Ajusta o espaçamento em relação aos outros elementos
+    gap: 40px;
+
+    padding-right: 30px;
 
     img {
-      width: 150px; // Reduz um pouco o tamanho para melhor alinhamento
+      width: 150px;
       max-width: 100%;
       height: auto;
+
       object-fit: contain;
+    }
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.8;
+
+    width: 100%;
+
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+
+      .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $text;
+
+        width: 45%;
+
+        svg {
+          font-size: 2.4rem;
+          color: $primary;
+
+          margin-bottom: 8px;
+        }
+
+        span {
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: $gray-700;
+
+          max-width: 200px;
+
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .footer-contact,
+      .container-address-social {
+        text-align: center;
+
+        width: 100%;
+
+        margin-bottom: 20px;
+
+        padding-left: 0;
+      }
+
+      .footer-menu {
+        text-align: center;
+
+        padding-left: 0;
+      }
+
+      .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-address-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 20px;
+      }
+
+      .container-address-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 20px;
+      }
+    }
+
+    .container-images {
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-copyright {
+      font-size: 14px;
+
+      margin-top: 20px;
     }
   }
 }
