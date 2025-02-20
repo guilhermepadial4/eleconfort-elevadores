@@ -1,5 +1,6 @@
 // Cores Primárias
 $primary: #ff565b; // Cor principal (vermelho)
+$primary-dark: #e04c50;
 $secondary: #10b7e2; // Cor secundária (azul)
 
 // Tons de Cinza (Escala)
@@ -28,6 +29,3 @@ $background-main: #24292e;
 $background-footer: #1e2226;
 $text: #212529; // Cor padrão de texto
 
-// Gradientes (Exemplo com primárias)
-$gradient-primary: linear-gradient(90deg, $primary, darken($primary, 10%));
-$gradient-secondary: linear-gradient(90deg, $secondary, lighten($secondary, 10%));

@@ -84,7 +84,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: darken($primary, 3%);
+      background-color: $primary-dark;
     }
   }
 }
@@ -164,7 +164,7 @@
 
   button {
     font-size: 14px;
-    
+
     padding: 8px 16px;
   }
 }

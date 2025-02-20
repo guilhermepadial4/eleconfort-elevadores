@@ -173,7 +173,7 @@
     padding: 10px;
 
     &:hover {
-      background-color: darken($primary, 5%);
+      background-color: $primary-dark
     }
   }
 

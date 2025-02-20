@@ -38,7 +38,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: darken($primary, 3%);
+      background-color: $primary-dark
     }
   }
 
