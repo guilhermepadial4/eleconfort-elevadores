@@ -58,15 +58,30 @@ export function Footer() {
           </div>
           <div className="footer-contact-item">
             <FaPhoneAlt className="footer-contact-icon" />
-            <p>(11) 2051-7645</p>
+            <p>
+              <a href="tel:+551120517645" target="_blank">
+                (11) 2051-7645
+              </a>
+            </p>
           </div>
           <div className="footer-contact-item">
             <FaWhatsapp className="footer-contact-icon" />
-            <p>(11) 99123-9476</p>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&text=Ol%C3%A1,%20Tudo%20bem?%20Gostaria%20de%20Saber%20Mais%20Informa%C3%A7%C3%B5es.&phone=5511991239476"
+                target="_blank"
+              >
+                (11) 99123-9476
+              </a>
+            </p>
           </div>
           <div className="footer-contact-item">
             <FaEnvelope className="footer-contact-icon" />
-            <p>comercial@eleconfortelevadores.com.br</p>
+            <p>
+              <a href="mailto:comercial@eleconfortelevadores.com.br" target="_blank">
+                comercial@eleconfortelevadores.com.br
+              </a>
+            </p>
           </div>
         </div>
 
@@ -75,17 +90,31 @@ export function Footer() {
             <h2 className="footer-address-title">Endereço</h2>
             <div className="footer-address-item">
               <FaMapMarkerAlt className="footer-address-icon" />
-              <p className="footer-address-text">Praça Haroldo Daltro, 394 - São Paulo, SP</p>
+              <p className="footer-address-text">
+                <a href="https://www.google.com/maps?q=Praça+Haroldo+Daltro,+394+-+São+Paulo,+SP" target="_blank">
+                  Praça Haroldo Daltro, 394 - São Paulo, SP
+                </a>
+              </p>
             </div>
           </div>
 
           <div className="footer-social">
             <h2 className="footer-social-title">Redes Sociais</h2>
             <div className="footer-social-links">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+              <a
+                href="https://www.facebook.com/eleconfortelevadores"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-icon"
+              >
                 <FaFacebookF />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+              <a
+                href="https://www.instagram.com/eleconfortelevadores/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-icon"
+              >
                 <FaInstagram />
               </a>
             </div>
