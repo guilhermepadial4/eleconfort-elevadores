@@ -6,7 +6,7 @@ import { ScrollToTop } from './ScrollToTop';
 
 export function App() {
   return (
-    <Router basename="/preview">
+    <Router>
       <ScrollToTop />
       <AppRoutes />
     </Router>
