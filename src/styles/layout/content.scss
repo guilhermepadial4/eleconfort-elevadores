@@ -6,77 +6,57 @@ body {
 
 .containerContent {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-
-  width: 100%;
-
-  background-color: #fbfbfb;
-
-  padding-top: 35px;
-  padding-left: 95px;
-  padding-right: 95px;
+  justify-content: center;
+  text-align: center;
 
   box-sizing: border-box;
-  overflow-x: hidden;
 
-  .contentLeft {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
 
-    width: 100%;
+  background: $light;
 
-    .textContainer {
-      align-self: flex-start;
+  padding: 50px 20px;
+}
 
-      max-width: 50%;
+.textContainer {
+  max-width: 700px;
 
-      h2 {
-        font-size: 28px;
-        font-weight: bold;
-        text-align: left;
-        color: $text;
+  margin-bottom: 40px;
+}
 
-        margin-top: 80px;
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: $text;
+  line-height: 1.2;
+}
 
-        span {
-          display: flex;
-          align-items: center;
-          font-size: 28px;
-          font-weight: bold;
-          color: $primary;
+h2 span {
+  display: block;
 
-          margin-top: 5px;
+  font-size: 28px;
+  color: $secondary-dark;
+  font-weight: 500;
 
-          &::before {
-            content: '';
+  margin-top: 10px;
+}
 
-            width: 55px;
-            height: 2px;
+.elevatorImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 
-            background-color: $primary;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-  }
+  border-radius: 12px;
 
-  img {
-    width: 500px;
+  transition: transform 0.3s ease-in-out;
 
-    border-radius: 8px;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: translateY(-10px);
-
-      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    transform: scale(1.05);
   }
 }
 

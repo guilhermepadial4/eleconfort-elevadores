@@ -68,16 +68,17 @@ export function Content() {
   return (
     <>
       <main className="containerContent">
-        <div className="contentLeft">
+        <div className="contentWrapper">
           <div className="textContainer">
             <h2 className="title">
               VOCÊ CONHECE SEU ELEVADOR?
               <span>ENTENDA COMO ELE FUNCIONA.</span>
             </h2>
           </div>
-          <img src={ElevatorOperation} alt="Funcionamento Elevador" />
+          <img src={ElevatorOperation} alt="Funcionamento Elevador" className="elevatorImage" />
         </div>
       </main>
+
       <div className="divider"></div>
 
       <section className="servicesContainer">
