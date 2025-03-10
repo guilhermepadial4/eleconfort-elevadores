@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
 
-import Buttons from '../../assets/butons.png';
-import Build from '../../assets/build-01.png';
-import Build2 from '../../assets/build-02.png';
-import Build3 from '../../assets/build-03.png';
+import Banner from '../../assets/banner-1.jpg';
+import Banner2 from '../../assets/banner-2.jpg';
+import Banner3 from '../../assets/banner-3.jpg';
 
 import '../../styles/layout/herobanner.scss';
 
 export const HeroBanner = () => {
-  const images = [Buttons, Build, Build2, Build3];
+  const images = [Banner, Banner2, Banner3];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
