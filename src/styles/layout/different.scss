@@ -60,7 +60,7 @@
 
     margin-top: auto;
 
-    background-color: $secondary-dark;
+    background-color: $primary;
 
     border: none;
     border-radius: 5px;
@@ -72,7 +72,7 @@
     transition: background 0.3s ease;
 
     &:hover {
-      background-color: $secondary-dark-dark;
+      background-color: $primary-dark;
     }
   }
 
