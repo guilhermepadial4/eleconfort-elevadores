@@ -11,6 +11,7 @@ import Service01 from '../../assets/service-04.png';
 import Service02 from '../../assets/service-07.png';
 import Service03 from '../../assets/service-02.png';
 import '../../styles/layout/content.scss';
+import Different from '../Different/Different';
 
 const services = [
   {
@@ -67,6 +68,8 @@ export function Content() {
 
   return (
     <>
+      <Different />
+
       <main className="containerContent">
         <div className="contentWrapper">
           <div className="textContainer">
